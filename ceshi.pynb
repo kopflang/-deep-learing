@@ -1,1 +1,127 @@
-here are some tips.
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@kopflang 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+ 
+kopflang
+/
+nlpStudy
+1
+1 1
+ Code  Issues 0  Pull requests 0  Actions  Projects 0  Wiki  Security  Insights  Settings
+nlpStudy
+/
+1.29[直播]问答系统（2） - 分词，拼写纠错，停用词过滤，词的标准化，词袋模型，文本相似度计算
+/
+课程内容
+/
+Lesson3-QASystem1
+/
+starter_code.ipynb
+ 
+
+1
+{
+2
+ "cells": [
+3
+  {
+4
+   "cell_type": "markdown",
+5
+   "metadata": {},
+6
+   "source": [
+7
+    "### 编辑距离的计算\n",
+8
+    "编辑距离可以用来计算两个字符串的相似度，它的应用场景很多，其中之一是拼写纠正（spell correction）。 编辑距离的定义是给定两个字符串str1和str2, 我们要计算通过最少多少代价cost可以把str1转换成str2. \n",
+9
+    "\n",
+10
+    "举个例子：\n",
+11
+    "\n",
+12
+    "输入:   str1 = \"geek\", str2 = \"gesek\"\n",
+13
+    "输出:  1\n",
+14
+    "插入 's'即可以把str1转换成str2\n",
+15
+    "\n",
+16
+    "输入:   str1 = \"cat\", str2 = \"cut\"\n",
+17
+    "输出:  1\n",
+18
+    "用u去替换a即可以得到str2\n",
+19
+    "\n",
+20
+    "输入:   str1 = \"sunday\", str2 = \"saturday\"\n",
+21
+    "输出:  3\n",
+22
+    "\n",
+23
+    "我们假定有三个不同的操作： 1. 插入新的字符   2. 替换字符   3. 删除一个字符。 每一个操作的代价为1. "
+24
+   ]
+25
+  },
+26
+  {
+27
+   "cell_type": "code",
+28
+   "execution_count": 1,
+29
+   "metadata": {
+30
+    "collapsed": true
+31
+   },
+32
+   "outputs": [],
+33
+   "source": [
+34
+    "# 基于动态规划的解法\n",
+35
+    "def edit_dist(str1, str2):\n",
+36
+    "    \n",
+37
+    "    # m，n分别字符串str1和str2的长度\n",
+@kopflang
+Commit changes
+Commit summary 
+Update starter_code.ipynb
+Optional extended description
+Add an optional extended description…
+  Commit directly to the master branch.
+  Create a new branch for this commit and start a pull request. Learn more about pull requests.
+ 
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+
